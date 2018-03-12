@@ -17,9 +17,9 @@ require_once 'bot_settings.php';
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient;
 use LINE\LINEBot\HTTPClient\CurlHTTPClient;
-//use LINE\LINEBot\Event;
-//use LINE\LINEBot\Event\BaseEvent;
-//use LINE\LINEBot\Event\MessageEvent;
+use LINE\LINEBot\Event;
+use LINE\LINEBot\Event\BaseEvent;
+use LINE\LINEBot\Event\MessageEvent;
 use LINE\LINEBot\MessageBuilder;
 use LINE\LINEBot\MessageBuilder\TextMessageBuilder;
 use LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
@@ -53,7 +53,7 @@ $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
  
 // userId 
-$userId = ' userId ของผู้ใช้ที่เราต้องการส่งข้อความ push ไปแสดง ';
+$userId = 'U06cc58d420c9822db281267fedcd34bb';
 // ทดสอบส่ง push ข้อความอย่างง่าย
 $textPushMessage = 'สวัสดีครับ';                
 $messageData = new TextMessageBuilder($textPushMessage);        
