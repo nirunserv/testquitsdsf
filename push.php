@@ -67,7 +67,7 @@ if ($response->isSucceeded()) {
 // Failed
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
-sleep(5);
+//sleep(5);
 
 $textPushMessage1 = 'สบายดีไหมครับ';                
 $messageData1 = new TextMessageBuilder($textPushMessage1);        
@@ -79,7 +79,7 @@ if ($response1->isSucceeded()) {
 // Failed
 echo $response1->getHTTPStatus() . ' ' . $response1->getRawBody();
 
-sleep(5);
+//sleep(5);
 
 $textPushMessage2 = 'วันนี้อากาศนี้นะครับ';                
 $messageData2 = new TextMessageBuilder($textPushMessage2);        
