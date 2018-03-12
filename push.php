@@ -61,7 +61,7 @@ $textPushMessage = 'สวัสดีครับ';
 $messageData = new TextMessageBuilder($textPushMessage);        
 $response = $bot->pushMessage($userId,$messageData);
 if ($response->isSucceeded()) {
-    echo 'Succeeded!';
+    echo 'Succeeded! 1';
     return;
 }
 // Failed
@@ -73,7 +73,7 @@ $textPushMessage1 = 'สบายดีไหมครับ';
 $messageData1 = new TextMessageBuilder($textPushMessage1);        
 $response1 = $bot->pushMessage($userId,$messageData1);
 if ($response1->isSucceeded()) {
-    echo 'Succeeded!';
+    echo 'Succeeded! 2';
     return;
 }
 // Failed
@@ -85,7 +85,7 @@ $textPushMessage2 = 'วันนี้อากาศนี้นะครั�
 $messageData2 = new TextMessageBuilder($textPushMessage2);        
 $response2 = $bot->pushMessage($userId,$messageData2);
 if ($response2->isSucceeded()) {
-    echo 'Succeeded!';
+    echo 'Succeeded! 3';
     return;
 }
 // Failed
