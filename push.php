@@ -69,13 +69,13 @@ if ($response->isSucceeded()) {
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 */
 
-sleep(180);
+sleep(5);
 
 $textPushMessage1 = 'สบายดีไหมครับ';                
 $messageData1 = new TextMessageBuilder($textPushMessage1);        
 $response1 = $bot->pushMessage($userId,$messageData1);
 
-sleep(180);
+sleep(5);
 
 $textPushMessage2 = 'วันนี้อากาศนี้นะครับ';                
 $messageData2 = new TextMessageBuilder($textPushMessage2);        
