@@ -60,36 +60,26 @@ $userId = 'U06cc58d420c9822db281267fedcd34bb';
 $textPushMessage = 'สวัสดีครับ';                
 $messageData = new TextMessageBuilder($textPushMessage);        
 $response = $bot->pushMessage($userId,$messageData);
+/*
 if ($response->isSucceeded()) {
     echo 'Succeeded! 1';
     return;
 }
 // Failed
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+*/
 
 //sleep(5);
 
 $textPushMessage1 = 'สบายดีไหมครับ';                
 $messageData1 = new TextMessageBuilder($textPushMessage1);        
 $response1 = $bot->pushMessage($userId,$messageData1);
-if ($response1->isSucceeded()) {
-    echo 'Succeeded! 2';
-    return;
-}
-// Failed
-echo $response1->getHTTPStatus() . ' ' . $response1->getRawBody();
 
 //sleep(5);
 
 $textPushMessage2 = 'วันนี้อากาศนี้นะครับ';                
 $messageData2 = new TextMessageBuilder($textPushMessage2);        
 $response2 = $bot->pushMessage($userId,$messageData2);
-if ($response2->isSucceeded()) {
-    echo 'Succeeded! 3';
-    return;
-}
-// Failed
-echo $response2->getHTTPStatus() . ' ' . $response2->getRawBody();
 
 
 ?>
