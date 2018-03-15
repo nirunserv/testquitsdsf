@@ -1,3 +1,5 @@
-<?
-echo "howloow World";
+<?php
+
+echo "Hellow World";
+  
 ?>
